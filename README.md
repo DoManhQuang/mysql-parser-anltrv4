@@ -1,5 +1,9 @@
 ## MySQL Parser Using Antlr
 
+Vui một chút :D
+
+![img0](https://domanhquang.github.io/bigdatacoban/image/mysql-parser/FB_IMG_1578133756574.jpg)
+
 Nếu phải kiểm tra cú pháp câu truy vấn SQL trước khi summit lên server có 100 dòng hoặc 1000 dòng hoặc nhiều hơn thế bạn sẽ làm gì?
 #### Tại sao nên sử dụng Antlr ?
 * Mã nguồn mở
