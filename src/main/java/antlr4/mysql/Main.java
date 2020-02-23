@@ -11,21 +11,24 @@ import org.antlr.v4.runtime.tree.TerminalNode;
 
 import java.io.*;
 
-
-
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        String sql = "SELECT Country, FirstName, LastName, Amount\n" +
-                "FROM (\n" +
-                "    SELECT Country, FirstName, LastName, Amount,\n" +
-                "        ROW_NUMBER() OVER (\n" +
-                "            GROUP BY country\n" +
-                "            ORDER BY Amount DESC\n" +
-                "        ) RowNum\n" +
-                "    FROM Sales\n" +
-                ")\n" +
-                "WHERE id = 1\n";
+        // truy van đúng
+//        String sql = "SELECT Country, FirstName, LastName, Amount\n" +
+//                "FROM (\n" +
+//                "    SELECT Country, FirstName, LastName, Amount,\n" +
+//                "        ROW_NUMBER() OVER (\n" +
+//                "            PARTITION BY country\n" +
+//                "            ORDER BY id\n" +
+//                "        ) RowNum\n" +
+//                "    FROM Sales\n" +
+//                "    ) AS tbl1\n" +
+//                "WHERE id = 1";
+
+        // truy vấn sai
+        String sql = "SELECT * FROM tbl WHERE id = '1’ OR 1 > 0 --";
+
         String sqlUp = sql.toUpperCase();
         MySqlLexer lexer = new MySqlLexer(new ANTLRInputStream(sqlUp));
         MySqlParser parser = new MySqlParser(new CommonTokenStream(lexer));
