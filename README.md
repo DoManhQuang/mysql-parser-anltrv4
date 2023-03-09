@@ -2,7 +2,7 @@
 
 Vui một chút :D
 
-![img0](https://domanhquang.github.io/bigdatacoban/image/mysql-parser/FB_IMG_1578133756574.jpg)
+![img0](https://github.com/DoManhQuang/datasciencecoban/blob/master/image/img-mysql-parser/FB_IMG_1578133756574.jpg)
 
 Nếu phải kiểm tra cú pháp câu truy vấn SQL trước khi summit lên server có 100 dòng hoặc 1000 dòng hoặc nhiều hơn thế bạn sẽ làm gì?
 #### Tại sao nên sử dụng Antlr ?
@@ -20,11 +20,11 @@ Nếu phải kiểm tra cú pháp câu truy vấn SQL trước khi summit lên s
 #### Ví dụ minh họa 
 * Mô tả kiểm tra câu truy vấn SQL cơ bản
 
-![img1](https://domanhquang.github.io/bigdatacoban/image/mysql-parser/sql_ast.png)
+![img1](https://github.com/DoManhQuang/datasciencecoban/blob/master/image/img-mysql-parser/sql_ast.png)
 
 * Phát hiện SQL Injection
 
-![img2](https://domanhquang.github.io/bigdatacoban/image/mysql-parser/SQL-parse-tree-of-an-SQL-injection%201.png)
+![img2](https://github.com/DoManhQuang/datasciencecoban/blob/master/image/img-mysql-parser/SQL-parse-tree-of-an-SQL-injection%201.png)
 
 #### Hướng dẫn sử dụng 
 Download
